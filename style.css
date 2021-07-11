@@ -1,0 +1,219 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	background-image: url(back1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: all;
+}
+
+.menubar {
+	height: 50px;
+	background-color: aqua;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	border-bottom: 5px solid salmon;
+	z-index: 9999;
+}
+
+.container {
+	width: 960px;
+	background-color: aliceblue;
+	margin: 60px auto;
+	position: relative;
+}
+
+.facebook {
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	background-image: url(img/fb.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-indent: -9999px;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+}
+
+ header {
+ 	padding: 15px;
+ 	margin-bottom: -7px;
+ }
+
+h1 {
+	font-size: 46px;
+	font-weight: bold;
+}
+
+.nav {
+	margin-top: 10px;
+}
+
+.nav ul li {
+	display: inline-block;
+}
+
+.nav a{
+	text-decoration: none;
+	font-size: 17px;
+	margin-right: 10px;
+	color: #e87208;
+}
+
+li a:hover {
+	background-color: lightgreen;
+	color: red;
+}
+
+.gambar {
+	height: 320px;
+	background-image: url(img/img6.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0, -200px;
+	border-top: 5px solid lightblue;
+	border-bottom: 5px solid khaki;
+}
+
+/*Style Content*/
+
+.main {
+	padding: 15px;
+	box-sizing: border-box;
+	width: 600px;
+	float: left;
+}
+h2 {
+	font-size : 25px;
+	font-weight: bold;
+}
+ 
+ /*.main */.artikel {
+ 	margin-bottom: 10px;
+ 	font-weight: bold;
+ 	font-size: 13px;
+ 	text-indent: 0;
+ }
+
+ /*.main */.artikel a {
+ 	text-decoration: none;
+ 	color: red;
+ }
+
+p {
+	text-indent: 25px;
+	margin-bottom: 20px;
+	line-height: 20px;
+}
+
+/*Sidebar*/
+
+.sidebar {
+	width: 300px;
+	float: right;
+}
+
+.sidebar h3 {
+	font: 20px/12px sans-serif;
+	font-weight: bold;
+	margin: 15px;
+	text-align: center;
+}
+
+.sidebar img {
+	float: left;
+	margin: 10px;
+}
+
+/*Footer*/
+footer {
+	height: 50px;
+	background-color: lightsteelblue;
+}
+
+footer .copy {
+ 	font : 22px/50px sans-serif;
+ 	text-align: center;
+ 	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Ini adalah Script Membersihkan Float*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
